@@ -9,11 +9,11 @@
     }
 }
 .header {
-    height: 5.625rem;
-    border-bottom: 1px solid #ebebeb;
+    background-color: white;
     .layout {
         justify-content: space-between;
-        height: 100%;
+        border-bottom: 1px solid #ebebeb;
+        height: 5.625rem;
     }
     .logo {
         & > a {
@@ -23,6 +23,14 @@
                 margin-top: 0.25rem;
             }
         }
+    }
+    .header-title {
+        padding: 4.1875rem 0;
+        text-align: center;
+        background-color: white;
+        font-size: 1.625rem;
+        font-weight: 500;
+        color: black;
     }
     .main-nav {
         height: 100%;

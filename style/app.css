@@ -540,19 +540,28 @@ html, body {
 }
 
 .header {
-  height: 5.625rem;
-  border-bottom: 1px solid #ebebeb;
+  background-color: white;
 }
 
 .header .layout {
   justify-content: space-between;
-  height: 100%;
+  border-bottom: 1px solid #ebebeb;
+  height: 5.625rem;
 }
 
 .header .logo > a > img {
   width: 2.625rem;
   height: auto;
   margin-top: 0.25rem;
+}
+
+.header .header-title {
+  padding: 4.1875rem 0;
+  text-align: center;
+  background-color: white;
+  font-size: 1.625rem;
+  font-weight: 500;
+  color: black;
 }
 
 .header .main-nav {
@@ -1032,4 +1041,10 @@ html, body {
 
 .home-layout .channel-section .channel-section__list > li .col-txt .col-mark > li:first-child {
   margin-right: 1rem;
+}
+
+.site-detail__section {
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  padding: 3.875rem 6.625rem 5.625rem 6.625rem;
 }

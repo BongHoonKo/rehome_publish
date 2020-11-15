@@ -1,0 +1,64 @@
+.reg-layout {
+    margin-top: 9.2rem;
+    margin-bottom: 4.2rem;
+}
+.register-box {
+    padding: 2.625rem 0;
+    &:first-child {
+        border-right: 1px solid #e3e3e3;
+    }
+    .register-box__contents {
+        & > p {
+            font-size: 1.3125rem;
+            position: relative;
+            & > b {
+                display: block;
+                min-height: 1.9375rem;
+            }
+            .btn {
+                width: 18.125rem;
+                height: 3.75rem;
+                margin-top: 1.75rem;
+            }
+            .tooltip {
+                position: absolute;
+                bottom: -2rem;
+                font-size: 0.75rem;
+                color: #c3c3c3;
+            }
+        }
+    }
+}
+
+.appdown-layout {
+    padding: 2.875rem;
+    background-color: #EFEFEF;
+    margin-bottom: 8.25rem;
+    .down-contents {
+        & > img {
+            width: 11.6875rem;
+            height: auto;
+            margin-right: 6.75rem;
+        }
+    }
+    .down-txt {
+        & > p {
+            font-size: 1.375rem;
+            margin-bottom: 1.75rem;
+            & > b {
+                display: block;
+            }
+        }
+        .btn-wrap {
+            & > a {
+                &:first-child {
+                    margin-right: 1rem;
+                }
+                & > img {
+                    width: 8.6875rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

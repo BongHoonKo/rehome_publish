@@ -1,0 +1,30 @@
+.footer {
+    background-color: #414141;
+    padding-top: 2.5rem;
+    padding-bottom: 4.375rem;
+    .ft-list {
+        &:not(:last-of-type) {
+            margin-bottom: 0.25rem;
+        }
+        & > li {
+            color: #acacac;
+            position: relative;
+            font-weight: normal;
+            letter-spacing: -0.03em;
+            & > a {
+                color: #acacac;
+            }
+            &:not(:last-of-type) {
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: 0.8125rem;
+                    background-color: #acacac;
+                    display: inline-block;;
+                    margin-top: -0.65rem;
+                    margin: 0 0.75rem;
+                }
+            }
+        }
+    }
+}

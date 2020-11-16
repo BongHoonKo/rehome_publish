@@ -1,0 +1,39 @@
+.wrap {
+    &.grey {
+        background-color: #f1f1f1;
+    }
+}
+.ad-box {
+    width: 25.5rem;
+    max-width: 100%;
+    height: 14.125rem;
+    background-color: #D6D6D6;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &::after {
+        content: 'ad';
+        width: 1.5rem;
+        height: 1.125rem;
+        background-color: $main-color;
+        color: white;
+        font-size: 0.75rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+.linked-title {
+    width: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    & > img {
+        width: 0.5rem;
+        height: auto;
+        margin-left: 0.75rem;
+    }
+}

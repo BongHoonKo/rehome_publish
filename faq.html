@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="theme-color" content="#B51E24">
+        <meta name="description" content="리홈 - Real Home"/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content="리홈"/>
+        <meta property="og:title" content="리홈"/>
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content="리홈"/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content=""/> -->
+        <meta property="og:image" content="/images/og-image.jpg"/>
+        <link rel="stylesheet" href="/style/app.css"/>
+        <link rel="stylesheet" href="/style/swiper.css"/>
+        <script src="/js/swiper.min.js"></script>
+        <script src="/js/global.js"></script>
+        <title>리홈</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="layout grid v-center">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" title="Real Home 로고" alt="Real Home" />
+                        </a>
+                    </h1>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list grid v-center">
+                            <li>
+                                <a href="#" class="active">
+                                    <span>현장</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>저장</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>채널</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>내정보</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="menu-btn" title="메뉴 버튼">
+                        <img src="./images/ico-menu.svg" alt=""/>
+                    </button>
+                </div>
+                <h2 class="header-title">내정보</h2>
+            </header>
+
+            <aside class="modal faq-modal">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <h3 class="modal-title">자주 묻는 질문</h3>
+                        <button class="modal-close" onclick="closeModal();"><img src="./images/ico-close.svg" alt=""/></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">리홈 ‘유료회원’ 서비스 및 가격 안내</h4>
+                            <span class="date">2020.03.24</span>
+                        </div>
+                        <div class="modal-body__textarea">리홈 ‘유료회원’ 서비스 및 가격 안내를 할 수 있도록
+                            리홈의 서비스 정책을 수립해야 합니다.
+                            
+                            1. 유료회원 종류
+                            2. 유료회원 가입 안내
+                            3. 프로모션 안내
+                        </div>
+
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 공지사항 리스트 -->
+            <div class="layout faq-layout">
+                <div class="container">
+                    <h5 class="container-title">
+                        <span>자주 묻는 질문</span>
+                    </h5>
+                    <section class="faq-list__section">
+                        <ul class="faq-section__list">
+                            <li>
+                                <a href="javascript:void(0)">회원계정</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">이용안내</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">문제해결</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">기타</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="layout p_none">
+                    <ul class="ft-list grid">
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+
+                    <ul class="ft-list grid">
+                        <li>부산광역시 해운대구 센텀중앙로 97 리홈(주)</li>
+                        <li>고객센터 1644-7115</li>
+                        <li>cs@rehomeapp.com</li>
+                    </ul>
+                    <ul class="ft-list grid">
+                        <li>Copyright ⓒ RealHome All rights reserved.</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            let faq = document.querySelectorAll('.faq-section__list > li > a');
+            for(let i=0; i < faq.length; i++) {
+                faq[i].addEventListener('click', function() {
+                    document.querySelector('.faq-modal').classList.add('active');
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -17,6 +17,7 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/sidebar';
+@import './layout/modal';
 
 // pages
 @import './pages/index';
@@ -25,3 +26,8 @@
 @import './pages/side-detail';
 @import './pages/site-list';
 @import './pages/save-list';
+@import './pages/channel-list';
+@import './pages/channel-detail';
+@import './pages/cs';
+@import './pages/faq';
+@import './pages/my-info';

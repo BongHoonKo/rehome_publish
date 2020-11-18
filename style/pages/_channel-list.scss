@@ -1,0 +1,43 @@
+.channelList-layout {
+    padding: 4.375rem 0 12.5rem 0;
+    .container {
+        background-color: white;
+        padding: 8.125rem 8rem;
+
+        .channel-section__list {
+            margin-left: -25px;
+            margin-right: -25px;
+            & > li {
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-bottom: 2.5rem;
+                .col-img {
+                    .channel-bookmark {
+                        width: 1rem;
+                        height: 1.25rem;
+                    }
+                }
+                .col-wrap {
+                    border: 0;
+                    border-radius: 0;
+                    .col-txt {
+                        & > a {
+                            display: block;
+                            margin-bottom: 2.5rem;
+                        }
+                        padding: 1.25rem 0 0;
+                        .col-title {
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                        }
+                        .profile-icons {
+                            & > li:nth-of-type(2) {
+                                margin-right: 0.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

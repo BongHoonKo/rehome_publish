@@ -1,0 +1,19 @@
+.faq-layout {
+    .faq-section__list {
+        width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+        & > li {
+            & > a {
+                padding: 1.25rem 3.25rem 1.25rem 2.375rem;
+                display: block;
+                font-size: 1.125rem;
+                font-weight: normal;
+                background-image: url('../images/ico-right_grey.svg');
+                background-size: 0.75rem;
+                background-position: right 2rem center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

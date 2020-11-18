@@ -1,0 +1,73 @@
+.cs-layout {
+    .container {
+        .container-title {
+            color: $main-color;
+            font-size: 1.4375rem;
+            font-weight: 500;
+            margin-bottom: 4.375rem;
+            & > img {
+                display: block;
+                margin: 0 auto;
+                width: 2.375rem;
+                height: auto;
+                margin-bottom: 1.75rem;
+            }
+        }
+        .cs-section {
+            background-color: white;
+            padding: 4.375rem 0;
+            border: 1px solid #EBEBEB;
+            border-radius: 4px;
+            .col {
+                padding: 0 4.75rem;
+                &:first-child {
+                    border-right: 1px solid #E3E3E3;
+                }
+            }
+            .cs-title {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-bottom: 1.875rem;
+                & > span {
+                    color: #393939;
+                    font-weight: normal;
+                    padding-left: 1.125rem;
+                    margin-left: 1.125rem;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 1px;
+                        height: 1.25rem;
+                        background-color: #E3E3E3;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -0.625rem;
+                    }
+                }
+            }
+            .cs-content {
+                height: 3.75rem;
+                background-color: #EDEFF0;
+                border-radius: 4px;
+                font-size: 1.125rem;
+                font-weight: normal;
+                & > img {
+                    margin-right: 0.375rem;
+                    width: 0.925rem;
+                    height: auto;
+                }
+            }
+            .cs-info {
+                margin-top: 1.625rem;
+                & > li {
+                    color: #B1B1B1;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

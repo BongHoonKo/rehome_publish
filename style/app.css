@@ -1201,9 +1201,12 @@ html, body {
   background-color: white;
 }
 
+.header .hd-wrap {
+  border-bottom: 1px solid #ebebeb;
+}
+
 .header .layout {
   justify-content: space-between;
-  border-bottom: 1px solid #ebebeb;
   height: 5.625rem;
 }
 

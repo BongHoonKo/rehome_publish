@@ -10,6 +10,15 @@
     &.active {
         display: block;
     }
+    &.info-modal {
+        .modal-container {
+            width: 32.875rem;
+            .modal-body {
+                padding-left: 2.625rem;
+                padding-right: 2.625rem;
+            }
+        }
+    }
     .modal-container {
         position: relative;
         -webkit-transform: translate(0);
@@ -67,6 +76,27 @@
         border-top: 0;
         padding: 0.875rem 4rem 5rem 4rem;
 
+        .modal-profile {
+            text-align: center;
+            padding: 0.875rem 0 4.375rem 0;
+            .profile-img {
+                width: 6.875rem;
+                height: 6.875rem;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                margin-bottom: 1.875rem;
+            }
+            .profile-change {
+                color: #A7A7A7;
+                font-size: 0.875rem;
+                font-weight: normal;
+                letter-spacing: -0.03em;
+            }
+        }
+
         .modal-body__title {
             background-color: #FAFAFA;
             height: 3.5rem;
@@ -91,5 +121,14 @@
             border-bottom: 1px solid #EBEBEB;
             white-space: pre-line;
         }
+    }
+    .bottom-btns {
+        padding: 0 2.5rem;
+    }
+    .bottom-btn {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
     }
 }

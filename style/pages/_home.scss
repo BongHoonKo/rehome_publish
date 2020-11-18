@@ -3,46 +3,8 @@
         padding-left: 75px;
         padding-right: 75px;
     }
-    .search-section {
-        margin-bottom: 8.75rem;
-        .search-form {
-            height: 5rem;
-        }
-        .search-input {
-            border: 2px solid $main-color;
-            border-radius: 4px 0 0 4px;
-            padding-left: 4rem;
-            background-image: url('../images/ico-search.svg');
-            background-position: 2.125rem center;
-            background-repeat: no-repeat;
-            background-size: 0.75rem;
-            &::placeholder {
-                color: #767676;
-                font-size: 1.125rem;
-                font-weight: normal;
-            }
-        }
-        .search-btn {
-            width: 13.25rem;
-            height: 100%;
-            color: white;
-            background-color: $main-color;
-            font-size: 1.125rem;
-            font-weight: 500;
-            border-radius: 0 4px 4px 0;
-        }
-    }
     .site-section {
         margin-bottom: 5.625rem;
-        .site-section__title {
-            margin-bottom: 2.1875rem;
-            font-size: 1.5rem;
-            font-weight: 500;
-            text-align: center;
-            & > strong {
-                color: $main-color;
-            }
-        }
     }
     .channel-section {
         margin-bottom: 5.625rem;
@@ -140,5 +102,68 @@
                 }
             }
         }
+    }
+}
+
+.search-layout {
+    .container {
+        padding: 4rem 75px;
+
+        .search-section {
+            .search-form {
+                height: 5rem;
+            }
+            .search-input {
+                border: 2px solid $main-color;
+                border-radius: 4px 0 0 4px;
+                padding-left: 4rem;
+                background-image: url('../images/ico-search.svg');
+                background-position: 2.125rem center;
+                background-repeat: no-repeat;
+                background-size: 0.75rem;
+                &::placeholder {
+                    color: #767676;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                }
+            }
+            .search-btn {
+                width: 13.25rem;
+                height: 100%;
+                color: white;
+                background-color: $main-color;
+                font-size: 1.125rem;
+                font-weight: 500;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+}
+
+.c-home-layout {
+    .container {
+        padding: 5.125rem 75px;
+        .c-home__section {
+            background-color: white;
+        }
+        .site-section__title {
+            border-bottom: 1px solid #EBEBEB;
+            padding-top: 2.125rem;
+            padding-bottom: 2.125rem;
+            margin: 0;
+        }
+        .c-home__content {
+            padding: 3.25rem 6.625rem;
+        }
+    }
+}
+
+.site-section__title {
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    & > strong {
+        color: $main-color;
     }
 }

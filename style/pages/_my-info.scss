@@ -1,1 +1,76 @@
-.myInfo-layout {}
+.myInfo-layout {
+    .my-info__section {
+        width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .my-info__top {
+        padding: 1.875rem 0;
+        border-bottom: 1px solid #EBEBEB;
+        .info-left {
+            width: 16.25rem;
+            text-align: center;
+            & > a {
+                display: inline-block;
+            }
+            .profile-img {
+                width: 6.25rem;
+                height: 6.25rem;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                margin-bottom: 0.875rem;
+            }
+            .profile-name {
+                font-size: 1.25rem;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+        .info-right {
+            flex: 1 1 auto;
+            .info-title {
+                margin-bottom: 2.625rem;
+                & > p {
+                    font-size: 1.25rem;
+                    font-weight: normal;
+                    margin-bottom: 0.625rem;
+                }
+                .info-mark {
+                    &.kakao {
+                        background-color: #E39E03;
+                        padding: 0.25rem 0.75rem;
+                        color: white;
+                        font-size: 0.875rem;
+                        font-weight: normal;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .info-list {
+                & > li {
+                    width: 25%;
+                    & > a {
+                        display: block;
+                        padding: 1rem;
+                        font-size: 0.875rem;
+                        color: #8E8E8E;
+                        margin-bottom: 0.125rem;
+                        text-align: center;
+                        & > p {
+                            color: $main-color;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .arrow-list {
+        border-bottom: 1px solid #EBEBEB;
+        padding: 1.875rem 0;
+    }
+}

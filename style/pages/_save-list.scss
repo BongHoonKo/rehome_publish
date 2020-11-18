@@ -69,3 +69,16 @@
         }
     }
 }
+
+.c-siteList-layout {
+    .site-list__section {
+        width: 1000px;
+        margin: 0 auto;
+        .site-section__list {
+            margin: 0;
+            & > li {
+                padding: 3.125rem 0;
+            }
+        }
+    }
+}

@@ -58,52 +58,40 @@
                         <img src="./images/ico-menu.svg" alt=""/>
                     </button>
                 </div>
-                <h2 class="header-title">내정보</h2>
+                <h2 class="header-title">분양현장</h2>
             </header>
 
-            <aside class="modal faq-modal">
-                <div class="modal-container">
-                    <div class="modal-header">
-                        <h3 class="modal-title">자주 묻는 질문</h3>
-                        <button class="modal-close" onclick="closeModal();"><img src="./images/ico-close.svg" alt=""/></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <div class="modal-body__title grid v-center">
-                            <h4 class="col title">리홈 ‘유료회원’ 서비스 및 가격 안내</h4>
-                            <span class="date">2020.03.24</span>
-                        </div>
-                        <div class="modal-body__textarea">리홈 ‘유료회원’ 서비스 및 가격 안내를 할 수 있도록
-                            리홈의 서비스 정책을 수립해야 합니다.
-                            
-                            1. 유료회원 종류
-                            2. 유료회원 가입 안내
-                            3. 프로모션 안내
-                        </div>
-
-                    </div>
-                </div>
-            </aside>
-
-            <!-- 자주묻는질문 리스트 -->
-            <div class="layout faq-layout">
+            <!-- 상담사 : 현장 리스트 -->
+            <div class="layout c-siteList-layout">
                 <div class="container">
-                    <h5 class="container-title">
-                        <span>자주 묻는 질문</span>
-                    </h5>
-                    <section class="faq-list__section">
-                        <ul class="arrow-list">
-                            <li>
-                                <a href="javascript:void(0)">회원계정</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">이용안내</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">문제해결</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">기타</a>
+                    <section class="site-list__section">
+                        <ul class="site-section__list c-site__list">
+                            <li class="col">
+                                <div class="col-wrap grid v-center">
+                                    <div class="col-img" style="background-image:url('./images/img-site.png');">
+                                        <mark class="site-status active">진행</mark>
+                                        <button class="site-bookmark active" title="저장"></button>
+                                    </div>
+                                    <div class="col-txt">
+                                        <a href="#">
+                                            <h4 class="col-title">광명 푸르지오 센트베르 분양영업 (신규)</h4>
+                                            <p class="col-location">경기도 광명시 광명동</p>
+                                        </a>
+                                        <div class="col-footer grid grid-wrap v-center">
+                                            <mark class="site-type">아파트</mark>
+                                            <ul class="site-info grid v-center">
+                                                <li>
+                                                    <i class="profile" style="background-image:url('./images/default-person.png');"></i>
+                                                    상담사 100
+                                                </li>
+                                                <li>
+                                                    <img src="./images/ico-bookmark_medium.svg" alt=""/>
+                                                    1200
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </section>
@@ -135,14 +123,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let faq = document.querySelectorAll('.faq-section__list > li > a');
-            for(let i=0; i < faq.length; i++) {
-                faq[i].addEventListener('click', function() {
-                    document.querySelector('.faq-modal').classList.add('active');
-                });
-            }
-        </script>
     </body>
 </html>

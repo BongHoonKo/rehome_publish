@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="theme-color" content="#B51E24">
+        <meta name="description" content="리홈 - Real Home"/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content="리홈"/>
+        <meta property="og:title" content="리홈"/>
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content="리홈"/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content=""/> -->
+        <meta property="og:image" content="/images/og-image.jpg"/>
+        <link rel="stylesheet" href="/style/app.css"/>
+        <link rel="stylesheet" href="/style/swiper.css"/>
+        <script src="/js/swiper.min.js"></script>
+        <script src="/js/global.js"></script>
+        <title>리홈</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="layout grid v-center">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" title="Real Home 로고" alt="Real Home" />
+                        </a>
+                    </h1>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list grid v-center">
+                            <li>
+                                <a href="#" class="active">
+                                    <span>현장</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>저장</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>채널</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>내정보</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="menu-btn" title="메뉴 버튼">
+                        <img src="./images/ico-menu.svg" alt=""/>
+                    </button>
+                </div>
+                <h2 class="header-title">내정보</h2>
+            </header>
+
+            <aside class="modal info-modal">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <h3 class="modal-title">내 정보</h3>
+                        <button class="modal-close" onclick="closeModal();"><img src="./images/ico-close.svg" alt=""/></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="modal-profile">
+                            <div class="profile-img" style="background-image: url('./images/img-test.png');"></div>
+                            <button class="profile-change">프로필 사진 바꾸기</button>
+                        </div>
+
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">기본정보</h4>
+                        </div>
+                        <form class="form">
+                            <fieldset>
+                                <label for="f-name" class="f-label">이름</label>
+                                <input type="text" name="name" class="f-input" id="f-name" value="김태희"/>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="f-email" class="f-label">이메일</label>
+                                <input type="email" name="email" class="f-input" id="f-email" value="taehee@naver.com"/>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="f-phone" class="f-label">이메일</label>
+                                <div class="input-wrap phone">
+                                    <input type="tel" name="phone" class="f-input" id="f-phone" value="01033039838"/>
+                                    <button class="phone-btn">인증완료</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="f-post-num" class="f-label">우편번호</label>
+                                <div class="input-wrap grid">
+                                    <input type="text" name="post-num" class="f-input" id="f-post-num" value="1245"/>
+                                    <button class="btn">주소검색</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="f-addr" class="f-label">주소</label>
+                                <input type="text" name="addr" class="f-input" id="f-addr" value="부산광역시 해운대구 센텀중앙로 97"/>
+                                <input type="text" name="addr2" class="f-input" id="f-addr2" value="센텀스카이비즈 1234호"/>
+                            </fieldset>
+                        </form>
+
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">관심 지역을 선택해주세요.</h4>
+                        </div>
+                        <form class="form">
+                            <fieldset>
+                                <select name="location" class="f-select" id="f-location">
+                                    <option value="Seoul">서울</option>
+                                    <option value="Busan">부산</option>
+                                </select>
+                                <ul class="f-list grid grid-wrap">
+                                    <li>서울 <button class="delete" title="삭제"></button></li>
+                                    <li>부산 <button class="delete" title="삭제"></button></li>
+                                </ul>
+                            </fieldset>
+                        </form>
+
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">관심 분야을 선택해주세요.</h4>
+                        </div>
+                        <form class="form">
+                            <fieldset>
+                                <select name="category" class="f-select" id="f-category">
+                                    <option value="아파트">아파트</option>
+                                </select>
+                                <ul class="f-list grid grid-wrap">
+                                    <li>아파트 <button class="delete" title="삭제"></button></li>
+                                    <li>타운하우스 <button class="delete" title="삭제"></button></li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                        <div class="bottom-btns">
+                            <button class="btn company full bottom-btn">저장하기</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 내정보 -->
+            <div class="layout myInfo-layout">
+                <div class="container">
+                    <section class="my-info__section">
+                        <div class="my-info__top grid v-center">
+                            <div class="info-left">
+                                <a href="javascript:void(0);">
+                                    <div class="profile-img" style="background-image: url('./images/img-test.png')"></div>
+                                    <p class="profile-name">강호동</p>
+                                </a>
+                            </div>
+                            <div class="info-right">
+                                <div class="info-title">
+                                    <p><b>강호동</b>님 반갑습니다</p>
+                                    <mark class="info-mark kakao">카카오 연동계정</mark>
+                                </div>
+                                <ul class="info-list grid">
+                                    <li>
+                                        <a href="#">
+                                            분양현장
+                                            <p>10개</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            상담사
+                                            <p>30명</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            채널
+                                            <p>50개</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            게시물
+                                            <p>100개</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="arrow-list">
+                            <li>
+                                <a href="javascript:void(0)">관심 지역 설정</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">관심 분야 설정</a>
+                            </li>
+                        </ul>
+
+                        <ul class="arrow-list">
+                            <li>
+                                <a href="javascript:void(0)">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">자주 묻는 질문</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">설정</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="layout p_none">
+                    <ul class="ft-list grid">
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+
+                    <ul class="ft-list grid">
+                        <li>부산광역시 해운대구 센텀중앙로 97 리홈(주)</li>
+                        <li>고객센터 1644-7115</li>
+                        <li>cs@rehomeapp.com</li>
+                    </ul>
+                    <ul class="ft-list grid">
+                        <li>Copyright ⓒ RealHome All rights reserved.</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            let infoLeft = document.querySelector('.info-left > a');
+                infoLeft.addEventListener('click', function() {
+                    document.querySelector('.info-modal').classList.add('active');
+                });
+        </script>
+    </body>
+</html>

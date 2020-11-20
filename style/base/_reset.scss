@@ -225,7 +225,10 @@ input[type=number] {
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-  
+  [hidden] {
+    display: none !important;
+  }
+
   button,
   [type="button"],
   [type="reset"],

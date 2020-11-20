@@ -37,6 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
+
+    insertPageList();
   });
   
   function changeTabs(e) {
@@ -64,6 +66,29 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  closeModal = function() {
-    document.querySelector('.modal').classList.remove('active');
+  closeModal = function(e) {
+    e.currentTarget.closest('.modal').classList.remove('active');
   }
+
+/* 퍼블리싱 페이지 보기 ( 아래로 추후 삭제 ) */
+function insertPageList() {
+  let list = ['member-list','index','home','login','register','faq','c-site-list','channel-list','channel-detail','cs','my-info','notice-list','save-list','site-detail','site-list','welcome'];
+  let html = '';
+  list.forEach(item => {
+      html += '<li><a href="/'+ item +'.html">'+ item +'</a></li>'
+  });
+  document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin','<ul class="view-site">'+ html +'</ul>');
+
+  document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin','<button class="test-btn" onclick="showSiteList(this);"></button>');
+}
+
+function showSiteList(e) {
+  if(e.classList.contains('active')) {
+      e.classList.remove('active');
+      document.querySelector('.view-site').classList.remove("active");
+  }
+  else {
+      e.classList.add('active');
+      document.querySelector('.view-site').classList.add("active");
+  }
+}

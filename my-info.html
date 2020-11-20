@@ -63,11 +63,11 @@
                 <h2 class="header-title">내정보</h2>
             </header>
 
-            <aside class="modal info-modal">
+            <aside class="modal info-modal" id="info-modal">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">내 정보</h3>
-                        <button class="modal-close" onclick="closeModal();"><img src="./images/ico-close.svg" alt=""/></button>
+                        <button class="modal-close" onclick="closeModal(event);"><img src="./images/ico-close.svg" alt=""/></button>
                     </div>
                     <div class="modal-body">
 
@@ -143,8 +143,70 @@
                                 </ul>
                             </fieldset>
                         </form>
+
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">기본 정보</h4>
+                        </div>
+                        <ul class="info-list">
+                            <li class="grid">
+                                <span>이름</span>
+                                <div class="info-txt">강호동</div>
+                            </li>
+                            <li class="grid">
+                                <span>현장명</span>
+                                <div class="info-txt">광명 푸르지오 센트베르</div>
+                            </li>
+                            <li class="grid">
+                                <span>직책</span>
+                                <div class="info-txt">본부장</div>
+                            </li>
+                        </ul>
+
+                        <div class="text-area__wrap">
+                            <h4 class="text-area__title">소개글</h4>
+                            <div class="text-area__content">안녕하세요. 
+                                광명 푸르지오 센트베르 현장을 담당하고 있는
+                                강호동입니다. 궁금하신 사항은 언제든지 문의주세요.
+                            </div>
+                        </div>
+
                         <div class="bottom-btns">
-                            <button class="btn company full bottom-btn">저장하기</button>
+                            <button class="btn main full bottom-btn">저장하기</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <aside class="modal info-modal" id="channel-modal">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <h3 class="modal-title">채널 관리</h3>
+                        <button class="modal-close" onclick="closeModal(event);"><img src="./images/ico-close.svg" alt=""/></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form class="form">
+                            <fieldset>
+                                <label for="f-name" class="f-label" hidden>이름</label>
+                                <input type="text" name="name" class="f-input" id="f-name" value="김태희"/>
+                            </fieldset>
+                            <fieldset>
+                                <select name="category" class="f-select" id="f-category">
+                                    <option value="채널분야">채널분야</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="f-set" class="f-label">공개설정</label>
+                                <div class="select-wrap f-setting">
+                                    <select name="setting" class="f-select" id="f-set">
+                                        <option value="채널분야">채널분야</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <div class="bottom-btns">
+                            <button class="btn main full bottom-btn">저장하기</button>
                         </div>
                     </div>
                 </div>
@@ -166,7 +228,7 @@
                                     <p><b>강호동</b>님 반갑습니다</p>
                                     <mark class="info-mark kakao">카카오 연동계정</mark>
                                 </div>
-                                <ul class="info-list grid">
+                                <ul class="myinfo-list grid">
                                     <li>
                                         <a href="#">
                                             분양현장
@@ -192,8 +254,24 @@
                                         </a>
                                     </li>
                                 </ul>
+
+                                <div class="c-myinfo__btns">
+                                    <button class="c-myinfo__btn">좋아요 <strong>1200</strong>명</button>
+                                    <button class="c-myinfo__btn">저장 <strong>1000</strong>명</button>
+                                </div>
                             </div>
                         </div>
+
+                        <section class="my-channel">
+                            <div class="profile-wrap grid v-center">
+                                <div class="profile-txt">
+                                    <h4 class="profile-name"><span>채널이름</span>으랏차차</h4>
+                                    <p class="info">구독자 1200명 ・ 게시물 100명</p>
+                                </div>
+                                <button class="btn main profile-btn">채널 관리</button>
+                            </div>
+                        </section>
+
                         <ul class="arrow-list">
                             <li>
                                 <a href="javascript:void(0)">관심 지역 설정</a>
@@ -250,8 +328,13 @@
         <script>
             let infoLeft = document.querySelector('.info-left > a');
                 infoLeft.addEventListener('click', function() {
-                    document.querySelector('.info-modal').classList.add('active');
-                });
+                    document.querySelector('#info-modal').classList.add('active');
+            });
+
+            let mychBtn = document.querySelector('.my-channel .btn');
+            mychBtn.addEventListener('click', () => {
+                document.querySelector('#channel-modal').classList.add('active');
+            });
         </script>
     </body>
 </html>

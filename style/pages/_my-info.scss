@@ -3,6 +3,9 @@
         width: 48rem;
         margin-left: auto;
         margin-right: auto;
+        .my-channel {
+            margin-top: 2.5rem;
+        }
     }
     .my-info__top {
         padding: 1.875rem 0;
@@ -49,7 +52,7 @@
                     }
                 }
             }
-            .info-list {
+            .myinfo-list {
                 & > li {
                     width: 25%;
                     & > a {
@@ -72,5 +75,19 @@
     .arrow-list {
         border-bottom: 1px solid #EBEBEB;
         padding: 1.875rem 0;
+    }
+    .c-myinfo__btns {
+        margin-top: 4.5rem;
+        .c-myinfo__btn {
+            border: 1px solid #EBEBEB;
+            border-radius: 300rem;
+            padding: 0.4375rem 1rem;
+            font-size: 0.875rem;
+            font-weight: normal;
+            & > strong {
+                color: $main-color;
+                font-weight: 500;
+            }
+        }
     }
 }

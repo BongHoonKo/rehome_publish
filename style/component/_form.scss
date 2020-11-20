@@ -35,6 +35,28 @@
                 display: none;
             }
         }
+        .select-wrap {
+            &.f-setting {
+                position: relative;
+                .f-select {
+                    padding-left: 2rem;
+                }
+                &::before {
+                    content: '';
+                    width: 1.5625rem;
+                    height: 1.5625rem;
+                    display: block;
+                    background-image: url('../images/ico-earth.svg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0.125rem;
+                    top: 50%;
+                    margin-top: -0.78125rem
+                }
+            }
+        }
 
         .input-wrap {
             position: relative;

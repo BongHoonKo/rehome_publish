@@ -95,6 +95,23 @@
                 font-weight: normal;
                 letter-spacing: -0.03em;
             }
+            .profile-btns {
+                & > li {
+                    &:not(:last-of-type) {
+                        margin-right: 0.9375rem;
+                    }
+                    & > button {
+                        font-size: 0.875rem;
+                        color: #A7A7A7;
+                        font-weight: 500;
+                        line-height: 1;
+                        padding: 0;
+                        & > img {
+                            margin-right: 0.3125rem;
+                        }
+                    }
+                }
+            }
         }
 
         .modal-body__title {
@@ -130,5 +147,39 @@
         font-weight: 500;
         padding-top: 0.875rem;
         padding-bottom: 0.875rem;
+    }
+
+    .mark-wrap {
+        &:not(:last-of-type) {
+            margin-bottom: 2.5rem;
+        }
+        .mark-title {
+            font-size: 1rem;
+            color: #5A5A5A;
+            font-weight: normal;
+            margin-bottom: 0.875rem;
+        }
+    }
+    .mark-list__wrap {
+        margin-top: 2.5rem;
+    }
+    .text-area__wrap {
+        margin-bottom: 4.375rem;
+        .text-area__title {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 1.875rem 1rem;
+        }
+        .text-area__content {
+            background-color: #FAFAFA;
+            border: 1px solid #EBEBEB;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: normal;
+            white-space: pre-line;
+            padding: 1.625rem;
+            height: 18.75rem;
+            overflow-y: auto;
+        }
     }
 }

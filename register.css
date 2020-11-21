@@ -1,0 +1,133 @@
+.max-width {
+  max-width: 46.625rem;
+  margin: 0 auto;
+}
+.register-title {
+  margin-top: 1.625rem;
+  margin-bottom: 6.875rem;
+  font-size: 2.125rem;
+  text-align: center;
+}
+.register-baseinfo-title {
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: -0.03rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  border-bottom: 2px solid #000000;
+}
+.register-baseinfo-title span {
+  font-weight: 500;
+}
+.register-baseinfo-profile {
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+.register-baseinfo-profile img{
+  margin-bottom: 1rem;
+  width: 6.25em;
+  height: 6.25em;
+  border-radius: 50%;
+}
+.register-baseinfo-profile_upload {
+  letter-spacing: -0.03rem;
+  font-size: 1rem;
+  color: #DD0011;
+}
+.register-baseinfo-info {
+  margin-bottom:  1.25rem;  
+}
+.register-baseinfo-info>p{
+  font-size: 1.125rem;
+  margin-bottom:  1.25rem;
+}
+.register-baseinfo-info input {
+  margin-bottom:  1.25rem;
+  padding-left: 1.5rem;
+  width: 100%;
+  height: 3.75rem;
+  font-size: 1.125rem;
+  font-weight: normal;  
+  border: 1px solid #C7C7C7;
+}
+.register-baseinfo-info_btn input {
+  width: 38.75rem;
+  margin-right: .625rem;  
+}
+.register-baseinfo-info_btn button {
+  vertical-align: top;
+  width: 6.875rem;
+  height: 3.75rem;
+  color: #ffffff;
+  background-color: #DD0011;
+}
+.register-baseinfo-info_btn>span {
+  display: inline-block;
+  vertical-align: top;
+  width: 6.875rem;;
+  height: 3.75rem;
+  line-height: 3.4375rem;
+  text-align: center;
+  color: #DD0011;
+}
+.register-baseinfo-info_resend {  
+  text-indent: 1.5rem;
+  font-size: 1.125rem;
+  color: #8B8B8B;
+}
+.register-baseinfo-info>p.register-baseinfo-info_resend{
+  margin-bottom: 2.5rem;
+}
+.register-baseinfo-info_resend a {
+  margin-left: .625rem;
+  padding-bottom: .25rem;
+  color: #484848;
+  border-bottom: 1px solid #484848;
+}
+.register-baseinfo-info_btn button.info_btn_address {
+  color: #ffffff;
+  background-color: #B5B5B4;
+}
+.register-baseinfo-favi {
+  margin-top: 3.4375rem;
+  font-weight: 500;
+}
+.register-baseinfo-select {
+  position: relative;
+}
+.register-baseinfo-select>img {
+  position: absolute;
+  top: 1.75rem;
+  right: 2.875rem;
+}
+.register-baseinfo-select select{
+  margin-bottom:  1.25rem;
+  padding-left: 1.5625rem;
+  width: 100%;
+  height: 3.75rem;
+  font-size: 1.125rem;  
+  border: 1px solid #C7C7C7;
+}
+.register-baseinfo-select button {
+  margin-right: .5rem;
+  padding: .625em;
+  height: 2.5rem;
+  border: 1px solid #E3E3E3;
+}
+.register-baseinfo-select button img {
+  margin-left: .5625rem;
+  width: .625rem;
+  height: .625rem;
+}
+.register-join {
+  margin-top: 7.5rem;
+  text-align: center;
+}
+.register-join button {
+  width: 16.875rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #DD0011;
+}

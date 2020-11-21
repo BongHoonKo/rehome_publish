@@ -15,8 +15,10 @@
         <meta property="og:type" content="website"/>
         <!-- <meta property="og:url" content=""/> -->
         <meta property="og:image" content="/images/og-image.jpg"/>
-        <link rel="stylesheet" href="/style/app.css"/>
-        <link rel="stylesheet" href="/style/swiper.css"/>
+        <link rel="stylesheet" href="./style/app.css"/>
+        <link rel="stylesheet" href="./style/swiper.css"/>
+        <link rel="stylesheet" href="./style/register.css"/>
+
         <script src="/js/swiper.min.js"></script>
         <script src="/js/global.js"></script>
         <title>리홈</title>
@@ -27,13 +29,78 @@
                 <h1 class="logo">
                     <img src="./images/logo.svg" title="Real Home 로고" alt="Real Home" />
                 </h1>
+                
+                
             </header>
 
             <!-- 회원가입 -->
             <div class="layout register-layout">
-                <img src="./images/ico-dropdown.svg" alt=""/>
-                <img src="./images/ico-close.svg" alt=""/>
-                <img src="./images/img-test.png" alt=""/>
+                    <div class="container">
+                        <section class="register__section">
+                            <h2 class="register-title">회원가입</h2>
+                            <article class="register-baseinfo max-width">
+                                <h3 class="register-baseinfo-title">
+                                    <span>기본정보</span>를 입력해 주세요
+                                </h3>
+                                <div class="register-baseinfo-profile">
+                                    <img src="./images/img-test.png" alt=""/>
+                                    <p class="register-baseinfo-profile_upload">사진추가</p>
+                                </div>
+                                <div class="register-baseinfo-info">
+                                    <p>이름</p>
+                                    <input value="김태희">
+                                </div>
+                                <div class="register-baseinfo-info">
+                                    <p>이메일</p>
+                                    <input value="taehee@naver.com">
+                                </div>
+                                <div class="register-baseinfo-info register-baseinfo-info_btn">
+                                    <p>전화번호</p>
+                                    <input value="010-1234-5678">
+                                    <button>인증요청</button>
+                                </div>
+                                <div class="register-baseinfo-info register-baseinfo-info_btn">
+                                    <p>인증번호</p>
+                                    <input value="123456">
+                                    <span>인증완료</span>
+                                    <p class="register-baseinfo-info_resend">인증번호를 받지 못하셨나요? <a href="#">재전송</a></p>
+                                </div>
+                                <div class="register-baseinfo-info register-baseinfo-info_btn">
+                                    <p>우편번호</p>
+                                    <input value="12345">
+                                    <button class="info_btn_address">주소검색</button>
+                                </div>
+                                <div class="register-baseinfo-info">
+                                    <p>주소</p>
+                                    <input value="부산광역시 해운대구 센텀중앙로 97">
+                                    <input value="센텀스카이비즈 1234호">
+                                </div>
+                                <h3 class="register-baseinfo-title register-baseinfo-favi">관심 지역을 선택해 주세요.</h3>
+                                <div class="register-baseinfo-select">
+                                    <select>
+                                        <option value="서울" selected>서울</option>
+                                        <option value="부산">부산</option>
+                                    </select>
+                                    <img src="./images/ico-dropdown.svg" alt=""/>
+                                    <button>서울<img src="./images/ico-close.svg" alt=""/></button>
+                                    <button>부산<img src="./images/ico-close.svg" alt=""/></button>
+                                </div>
+                                <h3 class="register-baseinfo-title register-baseinfo-favi">관심 분야를 선택해 주세요.</h3>
+                                <div class="register-baseinfo-select">
+                                    <select>
+                                        <option value="아파트" selected>아파트</option>
+                                        <option value="타운하우스">타운하우스</option>
+                                    </select>
+                                    <img src="./images/ico-dropdown.svg" alt=""/>
+                                    <button>아파트<img src="./images/ico-close.svg" alt=""/></button>
+                                    <button>타운하우스<img src="./images/ico-close.svg" alt=""/></button>
+                                </div>
+                                <div class="register-join">
+                                    <button >가입하기</button>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
             </div>
 
             <footer class="footer">

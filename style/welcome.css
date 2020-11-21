@@ -1,0 +1,42 @@
+.max-width {
+  max-width: 30.625rem;
+}
+.welcome-title {
+  margin: 0 auto;
+  margin-top: 5.625rem;  
+  text-align: center;
+}
+.welcome-title>h3{
+  margin-bottom: .375rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+.welcome-title>p {
+  line-height: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: normal;
+  margin-bottom: 3.125rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 2px solid #000000;
+}
+.welcome-info {
+  margin: 0 auto;
+  padding: 1.125rem 5.375rem;
+  width: 25rem;
+  height: 5.3125rem;
+  background-color: #F0F0F0;
+  border-radius: 1px;
+}
+.welcome-info>p{
+  font-size: 1rem;
+  color: #767676;
+  letter-spacing: -0.03rem;
+}
+.welcome-title button {
+  margin-top: 9rem;
+  width: 17.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  color:#FFFFFF;
+  background-color:#DD0011;
+}

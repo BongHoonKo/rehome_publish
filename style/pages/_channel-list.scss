@@ -40,4 +40,52 @@
             }
         }
     }
+
+    &.has-tab {
+        .container {
+            padding: 0;
+            [role="tabpanel"] {
+                padding: 8.125rem 8rem;
+                position: relative;
+            }
+        }
+
+        .channel-detail__section {
+            width: 746px;
+            margin: 0 auto;
+        }
+    }
+    .channel-list__tab {
+        & > [role="tab"] {
+            flex: 1 1 auto;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #606060;
+            background-color: #f1f1f1;
+            border-bottom: 2px solid $main-color;
+            padding: 1.25rem 0.5rem;
+
+            &[aria-selected="true"] {
+                color: $main-color;
+                background-color: white;
+                border: 2px solid $main-color;
+                border-bottom: 0;
+            }
+        }
+    }
+    .contents-add__btn {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: $main-color;
+        box-shadow: 3px 3px 10px rgba(181, 30, 36, 0.24);
+        position: absolute;
+        bottom: 9rem;
+        right: -6.25rem;
+        background-image: url('../images/ico-add_wh.svg');
+        background-size: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 100;
+    }
 }

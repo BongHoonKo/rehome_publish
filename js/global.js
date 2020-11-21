@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   
   function changeTabs(e) {
-    const target = e.target;
+    const target = e.currentTarget;
     const parent = target.parentNode;
     const grandparent = parent.parentNode;
   
@@ -60,6 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
       .forEach(p => p.setAttribute("hidden", true));
   
     // Show the selected panel
+    console.log(target.getAttribute("aria-controls"));
     grandparent.parentNode
       .querySelector(`#${target.getAttribute("aria-controls")}`)
       .removeAttribute("hidden");
@@ -72,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 /* 퍼블리싱 페이지 보기 ( 아래로 추후 삭제 ) */
 function insertPageList() {
-  let list = ['member-list','index','home','login','register','faq','c-site-list','channel-list','channel-detail','cs','my-info','notice-list','save-list','site-detail','site-list','welcome'];
+  let list = ['c-channel-list','member-list','index','home','login','register','faq','c-site-list','channel-list','channel-detail','cs','my-info','notice-list','save-list','site-detail','site-list','welcome'];
   let html = '';
   list.forEach(item => {
       html += '<li><a href="/'+ item +'.html">'+ item +'</a></li>'
@@ -91,4 +92,13 @@ function showSiteList(e) {
       e.classList.add('active');
       document.querySelector('.view-site').classList.add("active");
   }
+}
+
+function showSideMenu() {
+  let sideMenu = document.querySelector('.side-menu');
+  sideMenu.classList.add('active');
+}
+function removeSideMenu() {
+  let sideMenu = document.querySelector('.side-menu');
+  sideMenu.classList.remove('active');
 }

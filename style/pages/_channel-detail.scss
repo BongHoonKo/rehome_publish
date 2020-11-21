@@ -5,40 +5,41 @@
         background-color: white;
         padding: 6.25rem 15.9375rem;
     }
-    .channel-detail__section {
-        .channel-detail__img {
-            width: 100%;
+}
+
+.channel-detail__section {
+    .channel-detail__img {
+        width: 100%;
+    }
+    .channel-detail__hd {
+        padding: 1.875rem 0 1.75rem 0;
+        border-bottom: 1px solid #EBEBEB;
+        .detail-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
         }
-        .channel-detail__hd {
-            padding: 1.875rem 0 1.75rem 0;
-            border-bottom: 1px solid #EBEBEB;
-            .detail-title {
-                font-size: 1.25rem;
-                font-weight: 500;
-                margin-bottom: 0.75rem;
-            }
-            .profile-icons {
-                & > li {
-                    font-size: 0.875rem;
-                    &:not(:last-of-type) {
-                        margin-right: 0.875rem;
-                    }
-                    & > img {
-                        height: 1rem;
-                    }
+        .profile-icons {
+            & > li {
+                font-size: 0.875rem;
+                &:not(:last-of-type) {
+                    margin-right: 0.875rem;
+                }
+                & > img {
+                    height: 1rem;
                 }
             }
         }
-        .channel-detail__content {
-            padding: 1.625rem 0 6.25rem 0;
-            .date {
-                color: #8B8B8B;
-                font-weight: normal;
-                margin-bottom: 3.125rem;
-            }
-            .content {
-                white-space: pre-line;
-            }
+    }
+    .channel-detail__content {
+        padding: 1.625rem 0 6.25rem 0;
+        .date {
+            color: #8B8B8B;
+            font-weight: normal;
+            margin-bottom: 3.125rem;
+        }
+        .content {
+            white-space: pre-line;
         }
     }
 }

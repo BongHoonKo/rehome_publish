@@ -44,6 +44,17 @@
                 height: 2.5rem;
                 border-right: 1px solid #EBEBEB;
             }
+            .btn-wrap {
+                margin-left: auto;
+                .btn {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 1rem 4.25rem;
+                    &:not(:last-of-type) {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
             .subscribe-box {
                 margin-left: auto;
                 .profile-img {

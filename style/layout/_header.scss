@@ -10,8 +10,15 @@
 }
 .header {
     background-color: white;
+    z-index: 200;
+    padding-top: 5.625rem;
     .hd-wrap {
         border-bottom: 1px solid #ebebeb;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 200;
     }
     .layout {
         justify-content: space-between;

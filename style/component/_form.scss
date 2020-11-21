@@ -8,6 +8,13 @@
         &:not(:last-of-type) {
             margin-bottom: 1.875rem;
         }
+        .alert {
+            color: $main-color;
+            font-size: 0.875rem;
+            font-weight: normal;
+            padding-left: 0.3125rem;
+            margin-top: 0.5rem;
+        }
         .f-label {
             width: 100%;
             display: block;
@@ -23,6 +30,21 @@
             border-bottom: 1px solid #E3E3E3;
             font-size: 1.125rem;
             font-weight: normal;
+            &::placeholder {
+                color: #ADADAD;
+            }
+        }
+        .f-textarea {
+            height: 18.75rem;
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #E3E3E3;
+            padding: 0 0.5rem;
+            font-size: 1.125rem;
+            font-weight: normal;
+            &::placeholder {
+                color: #ADADAD;
+            }
         }
         .f-select {
             background-image: url('../images/ico-dropdown_sel.svg');
@@ -33,6 +55,23 @@
             -moz-appearance: none;
             &::-ms-expand {
                 display: none;
+            }
+        }
+        .file-label {
+            color: #ADADAD;
+            font-size: 1.125rem;
+            padding: 1.125rem  0;
+            border-bottom: 1px solid #EBEBEB;
+            .file-btn {
+                border: 1px solid #E3E3E3;
+                padding: 0.875rem;
+                padding-bottom: 0.5rem;
+                border-radius: 4px;
+                margin-right: 1.25rem;
+                & > img {
+                    width: 1.55rem;
+                    height: auto;
+                }
             }
         }
         .select-wrap {

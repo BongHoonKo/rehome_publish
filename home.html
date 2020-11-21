@@ -55,11 +55,53 @@
                                 </li>
                             </ul>
                         </nav>
-                        <button class="menu-btn" title="메뉴 버튼">
+                        <button class="menu-btn" title="메뉴 버튼" onclick="showSideMenu();">
                             <img src="./images/ico-menu.svg" alt=""/>
                         </button>
                     </div>
                 </div>
+
+                <aside class="side-menu grid">
+                    <button class="side-menu__close" title="닫기" onclick="removeSideMenu();"></button>
+                    <section class="side-menu__hd">
+                        <div class="hd-content grid">
+                            <a href="#" class="hd-btn">로그아웃</a>
+                            <a href="#" class="hd-btn">마이페이지</a>
+                        </div>
+                    </section>
+                    <section class="side-menu__body">
+                        <div class="body-top">
+                            <mark class="user-mark company">
+                                <span>기업</span>
+                                시행사
+                            </mark>
+                            <h3 class="body-top__title">
+                                <b>유재석</b> 님, 반갑습니다.
+                            </h3>
+                        </div>
+                        <nav class="body-nav">
+                            <ul class="body-nav__list">
+                                <li>
+                                    <a href="#">알림 및 공지사항 관리<img src="./images/ico-new.svg" alt="new"/></a>
+                                </li>
+                                <li>
+                                    <a href="#">이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">리얼홈 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">설정</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="side-menu__ft">
+                        <p class="txt">리홈 고객센터</p>
+                        <h5 class="num grid v-center">1544-1234 <img src="./images/ico-phone_radius.svg" alt=""/></h5>
+                        <p class="date">월 - 금  9시-18시 / 토, 일 공휴일 휴무</p>
+                    </section>
+                </aside>
             </header>
 
             <!-- 검색 섹션 -->
@@ -311,7 +353,7 @@
                     <section class="counselor-section">
                         <div class="grid">
                             <!-- 광고박스 -->
-                            <div class="ad-box" style="background-image:url('./images/img-site.png')"></div>
+                            <a href="#" class="ad-box" style="background-image:url('./images/img-site.png')"></a>
 
                             <!-- 최고의 상담사 리스트 -->
                             <div class="counselor-wrap">
@@ -394,7 +436,7 @@
                             </li>
                             <li class="col size_4-of-12">
                                 <div class="col-wrap">
-                                    <div class="ad-box"></div>
+                                    <a href="#" class="ad-box"></a>
                                 </div>
                             </li>
                         </ul>

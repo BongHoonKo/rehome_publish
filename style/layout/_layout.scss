@@ -12,6 +12,10 @@
 
     .container {
         padding: 4.375rem 25px 12.5rem 25px;
+        &.white {
+            background-color: white;
+            border: 1px solid #D3D3D3;
+        }
     }
 }
 

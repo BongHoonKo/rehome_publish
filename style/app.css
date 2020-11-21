@@ -1430,6 +1430,11 @@ html, body {
   padding: 4.375rem 25px 12.5rem 25px;
 }
 
+.layout .container.white {
+  background-color: white;
+  border: 1px solid #D3D3D3;
+}
+
 .grid {
   display: flex;
 }
@@ -2383,7 +2388,7 @@ html, body {
 }
 
 .saveList-layout .site-list__section {
-  padding-top: 9.375rem;
+  padding-top: 5.625rem;
 }
 
 .saveList-layout .counselor-list__section {
@@ -2561,7 +2566,6 @@ html, body {
 }
 
 .channelDetail-layout .container {
-  background-color: white;
   padding: 6.25rem 15.9375rem;
 }
 

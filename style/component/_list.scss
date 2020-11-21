@@ -564,3 +564,73 @@
         }
     }
 }
+
+.h-channel-section__list {
+    & > li {
+        margin-bottom: 2rem;
+        .col-wrap {
+            .col-img {
+                width: 50%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 7rem;
+                position: relative;
+                .channel-bookmark {
+                    position: absolute;
+                    width: 1.25rem;
+                    height: 1.5625rem;
+                    background-image: url('../images/ico-bookmark.svg');
+                    bottom: 0.75rem;
+                    right: 0.875rem;
+                    border: 0;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    &.active {
+                        background-image: url('../images/ico-bookmark_active.svg');
+                    }
+                }
+            }
+            .col-txt {
+                width: 50%;
+                padding-left: 1.25rem;
+                .col-title {
+                    font-size: 1.0625rem;
+                    font-weight: normal;
+                    margin-bottom: 0.4375rem;
+                    word-break: keep-all;
+                }
+                .col-date {
+                    font-size: 0.9375rem;
+                    color: #5D5D5D;
+                    font-weight: normal;
+                    margin-bottom: 0.875rem;
+                }
+            }
+        }
+    }
+}
+
+.h-list {
+    & > li {
+        border-top: 1px solid #EBEBEB;
+        border-bottom: 1px solid #EBEBEB;
+        &:not(:last-of-type) {
+            margin-bottom: 1.25rem;
+        }
+        & > span {
+            padding: 1rem;
+            background-color: #fafafa;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .h-list__txt {
+            padding: 1rem;
+            & > a {
+                color: #42a2fc;
+                font-weight: normal;
+            }
+        }
+    }
+}

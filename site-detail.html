@@ -58,14 +58,269 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="menu-btn" title="메뉴 버튼">
+                    <button class="menu-btn" title="메뉴 버튼" onclick="showSideMenu();">
                         <img src="./images/ico-menu.svg" alt="" />
                     </button>
                 </div>
             </div>
 
+            <!-- 사이드메뉴 -->
+            <aside class="side-menu grid">
+                <button class="side-menu__close" title="닫기" onclick="removeSideMenu();"></button>
+                <section class="side-menu__hd">
+                    <div class="hd-content grid">
+                        <a href="#" class="hd-btn">로그아웃</a>
+                        <a href="#" class="hd-btn">마이페이지</a>
+                    </div>
+                </section>
+                <section class="side-menu__body">
+                    <div class="body-top">
+                        <mark class="user-mark company">
+                            <span>기업</span>
+                            시행사
+                        </mark>
+                        <h3 class="body-top__title">
+                            <b>유재석</b> 님, 반갑습니다.
+                        </h3>
+                    </div>
+                    <nav class="body-nav">
+                        <ul class="body-nav__list">
+                            <li>
+                                <a href="#">알림 및 공지사항 관리<img src="./images/ico-new.svg" alt="new"/></a>
+                            </li>
+                            <li>
+                                <a href="#">이용안내</a>
+                            </li>
+                            <li>
+                                <a href="#">리얼홈 소개</a>
+                            </li>
+                            <li>
+                                <a href="#">설정</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="side-menu__ft">
+                    <p class="txt">리홈 고객센터</p>
+                    <h5 class="num grid v-center">1544-1234 <img src="./images/ico-phone_radius.svg" alt=""/></h5>
+                    <p class="date">월 - 금  9시-18시 / 토, 일 공휴일 휴무</p>
+                </section>
+            </aside>
+
             <h2 class="header-title">분양현장</h2>
         </header>
+
+        <aside class="modal info-modal active" id="c-info-modal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3 class="modal-title">시행사</h3>
+                    <button class="modal-close" onclick="closeModal(event);"><img src="./images/ico-close.svg" alt=""/></button>
+                </div>
+                <div class="modal-body">
+                    <section class="modal-body__section">
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">기본정보</h4>
+                        </div>
+                        <ul class="info-list">
+                            <li class="grid">
+                                <span>상호</span>
+                                <div class="info-txt">한국자산신탁</div>
+                            </li>
+                            <li class="grid">
+                                <span>대표자</span>
+                                <div class="info-txt grid">김규철</div>
+                            </li>
+                            <li class="grid">
+                                <span>소재지</span>
+                                <div class="info-txt">서울특별시 강남구 테헤란로 306 카이트타워</div>
+                            </li>
+                            <li class="grid">
+                                <span>연락처</span>
+                                <div class="info-txt">02-2112-6300</div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="modal-body__section">
+                        <ul class="h-list">
+                            <li class="grid">
+                                <span class="col size_5-of-12">시공능력 평가액</span>
+                                <div class="col h-list__txt grid v-center">준비중입니다.</div>
+                            </li>
+                            <li class="grid">
+                                <span class="col size_5-of-12">홈페이지</span>
+                                <div class="h-list__txt grid v-center">
+                                    <a href="http://www.kait.com/" target="_blank">http://www.kait.com/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="bottom-btns full">
+                        <button class="btn main full bottom-btn">구독하기</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal info-modal active" id="c-info-modal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3 class="modal-title">회원 프로필</h3>
+                    <button class="modal-close" onclick="closeModal(event);"><img src="./images/ico-close.svg" alt=""/></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="modal-profile">
+                        <div class="profile-img" style="background-image: url('./images/img-test.png');"></div>
+                        <ul class="profile-btns grid v-center h-center">
+                            <li>
+                                <button class="like-btn grid v-center">
+                                    <img src="./images/ico-heart_light.svg" alt=""/>1200
+                                </button>
+                            </li>
+                            <li>
+                                <button class="save-btn grid v-center">
+                                    <img src="./images/ico-bookmark_light.svg" alt=""/>1200</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <section class="modal-body__section">
+                        <div class="modal-body__title grid v-center">
+                            <h4 class="col title">기본정보</h4>
+                        </div>
+                        <ul class="info-list">
+                            <li class="grid">
+                                <span>이름</span>
+                                <div class="info-txt">강호동</div>
+                            </li>
+                            <li class="grid">
+                                <span>연락처</span>
+                                <div class="info-txt grid">010-1234-5678
+                                    <ul class="contact-icons grid v-center">
+                                        <li>
+                                            <button class="phone" title="핸드폰">
+                                                <img src="./images/ico-phone_wh.svg" alt=""/>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="kakao" title="카카오톡">
+                                                <img src="./images/ico-kakao.svg" alt=""/>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <span>현장명</span>
+                                <div class="info-txt">광명 푸르지오 센트베르</div>
+                            </li>
+                            <li class="grid">
+                                <span>직책</span>
+                                <div class="info-txt">본부장</div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="modal-body__section">
+                        <div class="text-area__wrap">
+                            <div class="text-area__content">안녕하세요. 
+                                광명 푸르지오 센트베르 현장을 담당하고 있는
+                                강호동입니다. 궁금하신 사항은 언제든지 문의주세요.
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal-body__section">
+                        <div class="my-channel">
+                            <div class="profile-wrap grid v-center">
+                                <div class="profile-txt">
+                                    <h4 class="profile-name">으랏차차</h4>
+                                    <p class="info">구독자 1200명 ・ 게시물 100명</p>
+                                </div>
+                                <button class="btn main profile-btn">구독</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal-body__section">
+                        <h4 class="section-title">업로드한 게시물</h4>
+                        <ul class="h-channel-section__list grid grid-wrap">
+                            <li class="col size_12-of-12">
+                                <div class="col-wrap grid">
+                                    <div class="col-img" style="background-image:url('./images/test-channel.png');">
+                                        <button class="channel-bookmark active" title="저장"></button>
+                                    </div>
+                                    <div class="col-txt grid v-center">
+                                        <a href="#">
+                                            <h4 class="col-title">분양이 궁금하다. 분양의 모든 것을 알려드립니다.</h4>
+                                            <p class="col-date">1일전</p>
+                                            <ul class="profile-icons grid v-center">
+                                                <li>
+                                                    <img src="./images/ico-thumb.svg" title="좋아요" alt="좋아요"/>
+                                                    1200
+                                                </li>
+                                                <li>
+                                                    <img src="./images/ico-bookmark_grey-full.svg" title="저장" alt="저장"/>
+                                                    1200
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col size_12-of-12">
+                                <div class="col-wrap grid">
+                                    <div class="col-img" style="background-image:url('./images/test-channel.png');">
+                                        <button class="channel-bookmark" title="저장"></button>
+                                    </div>
+                                    <div class="col-txt grid v-center">
+                                        <a href="#">
+                                            <h4 class="col-title">분양이 궁금하다. 분양의 모든 것을 알려드립니다.</h4>
+                                            <p class="col-date">1일전</p>
+                                            <ul class="profile-icons grid v-center">
+                                                <li>
+                                                    <img src="./images/ico-thumb.svg" title="좋아요" alt="좋아요"/>
+                                                    1200
+                                                </li>
+                                                <li>
+                                                    <img src="./images/ico-bookmark_grey-full.svg" title="저장" alt="저장"/>
+                                                    1200
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="col size_12-of-12">
+                                <div class="col-wrap grid">
+                                    <div class="col-img" style="background-image:url('./images/test-channel.png');">
+                                        <button class="channel-bookmark" title="저장"></button>
+                                    </div>
+                                    <div class="col-txt grid v-center">
+                                        <a href="#">
+                                            <h4 class="col-title">분양이 궁금하다. 분양의 모든 것을 알려드립니다.</h4>
+                                            <p class="col-date">1일전</p>
+                                            <ul class="profile-icons grid v-center">
+                                                <li>
+                                                    <img src="./images/ico-thumb.svg" title="좋아요" alt="좋아요"/>
+                                                    1200
+                                                </li>
+                                                <li>
+                                                    <img src="./images/ico-bookmark_grey-full.svg" title="저장" alt="저장"/>
+                                                    1200
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </aside>
 
         <!-- 현장 상세 -->
         <div class="layout siteDetail-layout">
@@ -73,7 +328,7 @@
                 <section class="site-detail__section">
                     <article class="site-main grid max-width site-contents-boundary">
                         <div class="col size_6-of-12">
-                            <div class="site-main-img">                                
+                            <div class="site-main-img">
                                 <img src="./images/site-detail-test.jpg">
                                 <div class="site-main-state">진행</div>
                                 <div class="site-main-rank">
@@ -82,19 +337,19 @@
                                         <div class="col size_6-of-12">기본급</div>
                                     </div>
                                 </div>
-                              
-                                  
+
+
                                 <div class="site-main-hoverimg">
                                     <div class="site-main-hoverimg_wrap">
                                         <button class="site-main-hoverimg-btn site-main-hoverimg_download">
-                                            <img src="./images/ico-download.svg" alt=""/>
+                                            <img src="./images/ico-download.svg" alt="" />
                                         </button>
                                         <button class="site-main-hoverimg-btn site-main-hoverimg_share">
-                                            <img src="./images/ico-share.svg" alt=""/>
+                                            <img src="./images/ico-share.svg" alt="" />
                                         </button>
-                                    </div>                            
+                                    </div>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="col size_6-of-12 site-main-right">
                             <div class="site-main-headline">
@@ -117,11 +372,14 @@
                                 </dl>
                                 <dl>
                                     <dt>근무지 주소</dt>
-                                    <dd>경기도 광명시 광명동 123번지                                        
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13.139" height="17.653" viewBox="0 0 13.139 17.653">
-                                                <path id="패스_2167" data-name="패스 2167" d="M12.149,2A6.569,6.569,0,0,0,5.58,8.569h0c0,5.226,6.147,11.083,6.147,11.083s6.992-6.191,6.992-11.083A6.569,6.569,0,0,0,12.149,2Zm0,9.8A3.411,3.411,0,1,1,15.56,8.393h0A3.411,3.411,0,0,1,12.149,11.8Z" transform="translate(-5.58 -2)" fill="#e39e03"/>
-                                            </svg>
-                                            <span class="site-desc-list_map">지도</span>
+                                    <dd>경기도 광명시 광명동 123번지
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13.139" height="17.653"
+                                            viewBox="0 0 13.139 17.653">
+                                            <path id="패스_2167" data-name="패스 2167"
+                                                d="M12.149,2A6.569,6.569,0,0,0,5.58,8.569h0c0,5.226,6.147,11.083,6.147,11.083s6.992-6.191,6.992-11.083A6.569,6.569,0,0,0,12.149,2Zm0,9.8A3.411,3.411,0,1,1,15.56,8.393h0A3.411,3.411,0,0,1,12.149,11.8Z"
+                                                transform="translate(-5.58 -2)" fill="#e39e03" />
+                                        </svg>
+                                        <span class="site-desc-list_map">지도</span>
                                         </span>
                                     </dd>
                                 </dl>
@@ -136,7 +394,7 @@
                                 <dd>주식회사 스티브
                                     <button>
                                         <p>정보보기
-                                            <span><img src="./images/ico-right.svg" alt=""/></span>
+                                            <span><img src="./images/ico-right.svg" alt="" /></span>
                                         </p>
                                     </button>
                                 </dd>
@@ -146,7 +404,7 @@
                                 <dd>삼성물산 건설부문
                                     <button>
                                         <p>정보보기
-                                            <span><img src="./images/ico-right.svg" alt=""/></span>
+                                            <span><img src="./images/ico-right.svg" alt="" /></span>
                                         </p>
                                     </button>
                                 </dd>
@@ -156,7 +414,7 @@
                                 <dd>현대중공업
                                     <button>
                                         <p>정보보기
-                                            <span><img src="./images/ico-right.svg" alt=""/></span>
+                                            <span><img src="./images/ico-right.svg" alt="" /></span>
                                         </p>
                                     </button>
                                 </dd>
@@ -168,66 +426,66 @@
                         <h4 class="site-consulting-activity"><span>100</span>명의 상담사가 활동중입니다</h4>
                         <ul class="site-consulting-profile grid">
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
                             <li class="col size_4-of-12">
-                                <img src="./images/img-test.png" alt=""/>
+                                <img src="./images/img-test.png" alt="" />
                                 김영철
                                 <button>프로필</button>
                             </li>
-                            
+
                         </ul>
                     </article>
                 </section>

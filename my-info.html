@@ -55,11 +55,55 @@
                                 </li>
                             </ul>
                         </nav>
-                        <button class="menu-btn" title="메뉴 버튼">
+                        <button class="menu-btn" title="메뉴 버튼" onclick="showSideMenu();">
                             <img src="./images/ico-menu.svg" alt=""/>
                         </button>
                     </div>
                 </div>
+
+                <!-- 사이드메뉴 -->
+                <aside class="side-menu grid">
+                    <button class="side-menu__close" title="닫기" onclick="removeSideMenu();"></button>
+                    <section class="side-menu__hd">
+                        <div class="hd-content grid">
+                            <a href="#" class="hd-btn">로그아웃</a>
+                            <a href="#" class="hd-btn">마이페이지</a>
+                        </div>
+                    </section>
+                    <section class="side-menu__body">
+                        <div class="body-top">
+                            <mark class="user-mark company">
+                                <span>기업</span>
+                                시행사
+                            </mark>
+                            <h3 class="body-top__title">
+                                <b>유재석</b> 님, 반갑습니다.
+                            </h3>
+                        </div>
+                        <nav class="body-nav">
+                            <ul class="body-nav__list">
+                                <li>
+                                    <a href="#">알림 및 공지사항 관리<img src="./images/ico-new.svg" alt="new"/></a>
+                                </li>
+                                <li>
+                                    <a href="#">이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">리얼홈 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">설정</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="side-menu__ft">
+                        <p class="txt">리홈 고객센터</p>
+                        <h5 class="num grid v-center">1544-1234 <img src="./images/ico-phone_radius.svg" alt=""/></h5>
+                        <p class="date">월 - 금  9시-18시 / 토, 일 공휴일 휴무</p>
+                    </section>
+                </aside>
+                
                 <h2 class="header-title">내정보</h2>
             </header>
 
@@ -76,99 +120,109 @@
                             <button class="profile-change">프로필 사진 바꾸기</button>
                         </div>
 
-                        <div class="modal-body__title grid v-center">
-                            <h4 class="col title">기본정보</h4>
-                        </div>
-                        <form class="form">
-                            <fieldset>
-                                <label for="f-name" class="f-label">이름</label>
-                                <input type="text" name="name" class="f-input" id="f-name" value="김태희"/>
-                            </fieldset>
-
-                            <fieldset>
-                                <label for="f-email" class="f-label">이메일</label>
-                                <input type="email" name="email" class="f-input" id="f-email" value="taehee@naver.com"/>
-                            </fieldset>
-
-                            <fieldset>
-                                <label for="f-phone" class="f-label">이메일</label>
-                                <div class="input-wrap phone">
-                                    <input type="tel" name="phone" class="f-input" id="f-phone" value="01033039838"/>
-                                    <button class="phone-btn">인증완료</button>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <label for="f-post-num" class="f-label">우편번호</label>
-                                <div class="input-wrap grid">
-                                    <input type="text" name="post-num" class="f-input" id="f-post-num" value="1245"/>
-                                    <button class="btn">주소검색</button>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <label for="f-addr" class="f-label">주소</label>
-                                <input type="text" name="addr" class="f-input" id="f-addr" value="부산광역시 해운대구 센텀중앙로 97"/>
-                                <input type="text" name="addr2" class="f-input" id="f-addr2" value="센텀스카이비즈 1234호"/>
-                            </fieldset>
-                        </form>
-
-                        <div class="modal-body__title grid v-center">
-                            <h4 class="col title">관심 지역을 선택해주세요.</h4>
-                        </div>
-                        <form class="form">
-                            <fieldset>
-                                <select name="location" class="f-select" id="f-location">
-                                    <option value="Seoul">서울</option>
-                                    <option value="Busan">부산</option>
-                                </select>
-                                <ul class="f-list grid grid-wrap">
-                                    <li>서울 <button class="delete" title="삭제"></button></li>
-                                    <li>부산 <button class="delete" title="삭제"></button></li>
-                                </ul>
-                            </fieldset>
-                        </form>
-
-                        <div class="modal-body__title grid v-center">
-                            <h4 class="col title">관심 분야을 선택해주세요.</h4>
-                        </div>
-                        <form class="form">
-                            <fieldset>
-                                <select name="category" class="f-select" id="f-category">
-                                    <option value="아파트">아파트</option>
-                                </select>
-                                <ul class="f-list grid grid-wrap">
-                                    <li>아파트 <button class="delete" title="삭제"></button></li>
-                                    <li>타운하우스 <button class="delete" title="삭제"></button></li>
-                                </ul>
-                            </fieldset>
-                        </form>
-
-                        <div class="modal-body__title grid v-center">
-                            <h4 class="col title">기본 정보</h4>
-                        </div>
-                        <ul class="info-list">
-                            <li class="grid">
-                                <span>이름</span>
-                                <div class="info-txt">강호동</div>
-                            </li>
-                            <li class="grid">
-                                <span>현장명</span>
-                                <div class="info-txt">광명 푸르지오 센트베르</div>
-                            </li>
-                            <li class="grid">
-                                <span>직책</span>
-                                <div class="info-txt">본부장</div>
-                            </li>
-                        </ul>
-
-                        <div class="text-area__wrap">
-                            <h4 class="text-area__title">소개글</h4>
-                            <div class="text-area__content">안녕하세요. 
-                                광명 푸르지오 센트베르 현장을 담당하고 있는
-                                강호동입니다. 궁금하신 사항은 언제든지 문의주세요.
+                        <section class="modal-body__section">
+                            <div class="modal-body__title grid v-center">
+                                <h4 class="col title">기본정보</h4>
                             </div>
-                        </div>
+                            <form class="form">
+                                <fieldset>
+                                    <label for="f-name" class="f-label">이름</label>
+                                    <input type="text" name="name" class="f-input" id="f-name" value="김태희"/>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="f-email" class="f-label">이메일</label>
+                                    <input type="email" name="email" class="f-input" id="f-email" value="taehee@naver.com"/>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="f-phone" class="f-label">이메일</label>
+                                    <div class="input-wrap phone">
+                                        <input type="tel" name="phone" class="f-input" id="f-phone" value="01033039838"/>
+                                        <button class="phone-btn">인증완료</button>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="f-post-num" class="f-label">우편번호</label>
+                                    <div class="input-wrap grid">
+                                        <input type="text" name="post-num" class="f-input" id="f-post-num" value="1245"/>
+                                        <button class="btn">주소검색</button>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="f-addr" class="f-label">주소</label>
+                                    <input type="text" name="addr" class="f-input" id="f-addr" value="부산광역시 해운대구 센텀중앙로 97"/>
+                                    <input type="text" name="addr2" class="f-input" id="f-addr2" value="센텀스카이비즈 1234호"/>
+                                </fieldset>
+                            </form>
+                        </section>
+                        
+                        <section class="modal-body__section">
+                            <div class="modal-body__title grid v-center">
+                                <h4 class="col title">관심 지역을 선택해주세요.</h4>
+                            </div>
+                            <form class="form">
+                                <fieldset>
+                                    <select name="location" class="f-select" id="f-location">
+                                        <option value="Seoul">서울</option>
+                                        <option value="Busan">부산</option>
+                                    </select>
+                                    <ul class="f-list grid grid-wrap">
+                                        <li>서울 <button class="delete" title="삭제"></button></li>
+                                        <li>부산 <button class="delete" title="삭제"></button></li>
+                                    </ul>
+                                </fieldset>
+                            </form>
+                        </section>
+
+                        <section class="modal-body__section">
+                            <div class="modal-body__title grid v-center">
+                                <h4 class="col title">관심 분야을 선택해주세요.</h4>
+                            </div>
+                            <form class="form">
+                                <fieldset>
+                                    <select name="category" class="f-select" id="f-category">
+                                        <option value="아파트">아파트</option>
+                                    </select>
+                                    <ul class="f-list grid grid-wrap">
+                                        <li>아파트 <button class="delete" title="삭제"></button></li>
+                                        <li>타운하우스 <button class="delete" title="삭제"></button></li>
+                                    </ul>
+                                </fieldset>
+                            </form>
+                        </section>
+
+                        <section class="modal-body__section">
+                            <div class="modal-body__title grid v-center">
+                                <h4 class="col title">기본 정보</h4>
+                            </div>
+                            <ul class="info-list">
+                                <li class="grid">
+                                    <span>이름</span>
+                                    <div class="info-txt">강호동</div>
+                                </li>
+                                <li class="grid">
+                                    <span>현장명</span>
+                                    <div class="info-txt">광명 푸르지오 센트베르</div>
+                                </li>
+                                <li class="grid">
+                                    <span>직책</span>
+                                    <div class="info-txt">본부장</div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="modal-body__section">
+                            <h4 class="section-title">소개글</h4>
+                            <div class="text-area__wrap">
+                                <div class="text-area__content">안녕하세요. 
+                                    광명 푸르지오 센트베르 현장을 담당하고 있는
+                                    강호동입니다. 궁금하신 사항은 언제든지 문의주세요.
+                                </div>
+                            </div>
+                        </section>
 
                         <div class="bottom-btns">
                             <button class="btn main full bottom-btn">저장하기</button>

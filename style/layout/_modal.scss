@@ -19,6 +19,39 @@
             }
         }
     }
+    &.alert-modal {
+        .modal-container {
+            width: 32.5rem;
+            .modal-body {
+                border-radius: 10px;
+                padding: 3.7rem 2.625rem 2.625rem;
+                .alert-title {
+                    text-align: center;
+                    font-size: 1.625rem;
+                    font-weight: 500;
+                    margin-bottom: 1.75rem;
+                    & > strong {
+                        color: $main-color;
+                        font-weight: 500;
+                    }
+                }
+                .alert-txt {
+                    text-align: center;
+                    font-size: 1.25rem;
+                    color: #8B8B8B;
+                    font-weight: normal;
+                }
+                .bottom-btns {
+                    margin-top: 2.5rem;
+                    .btn {
+                        &:first-of-type {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .modal-container {
         position: relative;
         -webkit-transform: translate(0);
@@ -35,7 +68,7 @@
         justify-content: center;
         margin: 0 2rem;
         height: 100%;
-        padding: 3rem 0;
+        padding: 1.5rem 0;
         border-radius: .25rem;
 
         margin: 0 auto;

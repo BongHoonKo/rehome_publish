@@ -23,6 +23,8 @@
     </head>
     <body>
         <div class="wrap">
+
+            <!-- 헤더 -->
             <header class="header">
                 <div class="hd-wrap">
                     <div class="layout grid v-center">
@@ -107,7 +109,8 @@
                 <h2 class="header-title">내정보</h2>
             </header>
 
-            <aside class="modal faq-modal">
+            <!-- 모달 -->
+            <aside class="modal faq-modal active">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">자주 묻는 질문</h3>
@@ -156,6 +159,7 @@
                 </div>
             </div>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">
@@ -181,14 +185,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let faq = document.querySelectorAll('.faq-section__list > li > a');
-            for(let i=0; i < faq.length; i++) {
-                faq[i].addEventListener('click', function() {
-                    document.querySelector('.faq-modal').classList.add('active');
-                });
-            }
-        </script>
     </body>
 </html>

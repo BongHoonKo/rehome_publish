@@ -23,6 +23,8 @@
     </head>
     <body>
         <div class="wrap grey">
+
+            <!-- 헤더 -->
             <header class="header">
                 <div class="hd-wrap">
                     <div class="layout grid v-center">
@@ -107,7 +109,8 @@
                 <h2 class="header-title">채널</h2>
             </header>
 
-            <aside class="modal notice-modal">
+            <!-- 모달 -->
+            <aside class="modal notice-modal active">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">리얼홈</h3>
@@ -215,6 +218,7 @@
                 </div>
             </div>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">
@@ -240,14 +244,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let notice = document.querySelectorAll('.notice-section__list .col');
-            for(let i=0; i < notice.length; i++) {
-                notice[i].addEventListener('click', function() {
-                    document.querySelector('.notice-modal').classList.add('active');
-                });
-            }
-        </script>
     </body>
 </html>

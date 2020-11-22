@@ -1,15 +1,14 @@
 window.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll('[role="tab"]');
     const tabList = document.querySelector('[role="tablist"]');
-  
-    // Add a click event handler to each tab
+
+    // 탭
     if(tabs) {
       tabs.forEach(tab => {
         tab.addEventListener("click", changeTabs);
       });
     }
   
-    // Enable arrow navigation between tabs in the tab list
     let tabFocus = 0;
     
     if(tabList) {
@@ -19,14 +18,12 @@ window.addEventListener("DOMContentLoaded", () => {
           tabs[tabFocus].setAttribute("tabindex", -1);
           if (e.keyCode === 39) {
             tabFocus++;
-            // If we're at the end, go to the start
             if (tabFocus >= tabs.length) {
               tabFocus = 0;
             }
             // Move left
           } else if (e.keyCode === 37) {
             tabFocus--;
-            // If we're at the start, move to the end
             if (tabFocus < 0) {
               tabFocus = tabs.length - 1;
             }
@@ -38,28 +35,52 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    // 아코디언
+    let accrBtns = document.querySelectorAll('.accordian .accordian-controls');
+    if(accrBtns) {
+      accrBtns.forEach(accr => {
+        accr.addEventListener("click", handleAccordian);
+      });
+    }
+
     insertPageList();
   });
+
+  function handleAccordian(e) {
+    const target = e.currentTarget;
+    const parent = target.parentNode;
+    const grandparent = parent.parentNode;
+
+    parent
+      .querySelectorAll('[aria-expanded="true"]')
+      .forEach(t => t.setAttribute("aria-expanded", false));
+
+    target.setAttribute("aria-expanded", true);
+
+    grandparent
+      .querySelectorAll('.accordian-content')
+      .forEach(p => p.setAttribute("hidden", true));
+  
+    grandparent.parentNode
+      .querySelector(`#${target.getAttribute("aria-controls")}`)
+      .removeAttribute("hidden");
+  }
   
   function changeTabs(e) {
     const target = e.currentTarget;
     const parent = target.parentNode;
     const grandparent = parent.parentNode;
   
-    // Remove all current selected tabs
     parent
       .querySelectorAll('[aria-selected="true"]')
       .forEach(t => t.setAttribute("aria-selected", false));
   
-    // Set this tab as selected
     target.setAttribute("aria-selected", true);
   
-    // Hide all tab panels
     grandparent
       .querySelectorAll('[role="tabpanel"]')
       .forEach(p => p.setAttribute("hidden", true));
   
-    // Show the selected panel
     console.log(target.getAttribute("aria-controls"));
     grandparent.parentNode
       .querySelector(`#${target.getAttribute("aria-controls")}`)
@@ -73,7 +94,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 /* 퍼블리싱 페이지 보기 ( 아래로 추후 삭제 ) */
 function insertPageList() {
-  let list = ['c-channel-list','member-list','index','home','login','register','faq','c-site-list','channel-list','channel-detail','cs','my-info','notice-list','save-list','site-detail','site-list','welcome'];
+  let list = ['terms','c-channel-list','member-list','index','home','login','register','faq','c-site-list','channel-list','channel-detail','cs','my-info','notice-list','save-list','site-detail','site-list','welcome'];
   let html = '';
   list.forEach(item => {
       html += '<li><a href="/'+ item +'.html">'+ item +'</a></li>'

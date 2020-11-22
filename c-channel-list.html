@@ -109,7 +109,8 @@
                 <h2 class="header-title">채널</h2>
             </header>
 
-            <aside class="modal info-modal" id="channel-add-modal">
+            <!-- 모달 -->
+            <aside class="modal info-modal active" id="channel-add-modal">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">채널 만들기</h3>
@@ -145,7 +146,8 @@
                 </div>
             </aside>
 
-            <aside class="modal info-modal" id="channel-contents-add-modal">
+            <!-- 모달 -->
+            <aside class="modal info-modal active" id="channel-contents-add-modal">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">게시물 작성</h3>
@@ -605,6 +607,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="layout-ft">
                 <div class="layout p_none">
                     <div class="grid v-center">
@@ -627,6 +630,7 @@
                 </div>
             </section>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">
@@ -652,17 +656,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let contentsAdd = document.querySelector('.contents-add__btn');
-            contentsAdd.addEventListener('click', () => {
-                document.querySelector('#channel-contents-add-modal').classList.add('active');
-            });
-
-            let channelAdd = document.querySelector('.channel-add__btn');
-            channelAdd.addEventListener('click', () => {
-                document.querySelector('#channel-add-modal').classList.add('active');
-            });
-        </script>
     </body>
 </html>

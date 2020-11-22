@@ -23,6 +23,8 @@
     </head>
     <body>
         <div class="wrap">
+
+            <!-- 헤더 -->
             <header class="header">
                 <div class="hd-wrap">
                     <div class="layout grid v-center">
@@ -107,7 +109,8 @@
                 <h2 class="header-title">내정보</h2>
             </header>
 
-            <aside class="modal info-modal" id="info-modal">
+            <!-- 모달 -->
+            <aside class="modal info-modal active" id="info-modal">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">내 정보</h3>
@@ -231,7 +234,8 @@
                 </div>
             </aside>
 
-            <aside class="modal info-modal" id="channel-modal">
+            <!-- 모달 -->
+            <aside class="modal info-modal active" id="channel-modal">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">채널 관리</h3>
@@ -353,6 +357,7 @@
                 </div>
             </div>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">
@@ -378,17 +383,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let infoLeft = document.querySelector('.info-left > a');
-                infoLeft.addEventListener('click', function() {
-                    document.querySelector('#info-modal').classList.add('active');
-            });
-
-            let mychBtn = document.querySelector('.my-channel .btn');
-            mychBtn.addEventListener('click', () => {
-                document.querySelector('#channel-modal').classList.add('active');
-            });
-        </script>
     </body>
 </html>

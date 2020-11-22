@@ -23,6 +23,8 @@
     </head>
     <body>
         <div class="wrap">
+
+            <!-- 헤더 -->
             <header class="header">
                 <div class="hd-wrap">
                     <div class="layout grid v-center">
@@ -107,7 +109,8 @@
                 <h2 class="header-title">회원</h2>
             </header>
 
-            <aside class="modal info-modal">
+            <!-- 모달 -->
+            <aside class="modal info-modal active">
                 <div class="modal-container">
                     <div class="modal-header">
                         <h3 class="modal-title">회원 프로필</h3>
@@ -246,6 +249,7 @@
                 </div>
             </div>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">
@@ -271,14 +275,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            let profileBtn = document.querySelectorAll('.profile-btn');
-            for(let i=0; i<profileBtn.length; i++) {
-                profileBtn[i].addEventListener('click', () => {
-                    document.querySelector('.info-modal').classList.add('active');
-                });
-            }
-        </script>
     </body>
 </html>

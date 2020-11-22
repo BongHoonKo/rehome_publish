@@ -23,6 +23,8 @@
     </head>
     <body>
         <div class="wrap">
+
+            <!-- 헤더 -->
             <header class="header">
                 <div class="hd-wrap">
                     <div class="layout grid v-center">
@@ -112,7 +114,7 @@
                 <div class="container">
                     <div class="tabs save-list__tabs">
                         <div role="tablist" aria-label="Sample Tabs" class="save-list__tab grid">
-                          <button role="tab" aria-selected="false" aria-controls="panel-1" id="tab-1" tabindex="0">
+                          <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
                                 <span>분양현장</span>
                           </button>
                           <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
@@ -121,13 +123,13 @@
                           <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
                                 <span>채널</span>
                           </button>
-                          <button role="tab" aria-selected="true" aria-controls="panel-4" id="tab-4" tabindex="-1">
+                          <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" tabindex="-1">
                                 <span>게시물</span>
                           </button>
                         </div>
 
                         <!-- 분양현장 탭 판넬 -->
-                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" hidden>
+                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
                             <section class="site-list__section">
                                 <ul class="site-section__list grid grid-wrap not-home">
                                     <li class="col size_4-of-12">
@@ -564,7 +566,7 @@
                         </div>
 
                         <!-- 게시물 탭 판넬 -->
-                        <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+                        <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
                             <section class="h-channel-list__section">
                                 <ul class="h-channel-section__list grid grid-wrap">
                                     <li class="col size_4-of-12">
@@ -693,6 +695,7 @@
                 </div>
             </div>
 
+            <!-- 푸터 -->
             <footer class="footer">
                 <div class="layout p_none">
                     <ul class="ft-list grid">

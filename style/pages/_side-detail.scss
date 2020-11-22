@@ -2,4 +2,257 @@
     background-color: white;
     border: 1px solid #d3d3d3;
     padding: 3.875rem 6.625rem 5.625rem 6.625rem;
+
+    .max-width{
+        max-width: 51.875rem  ;
+        margin: 0 auto;
+      }
+      /* site-main */
+      .site-main-img {
+        position: relative;
+        width: 22.625rem;
+        height: 15.625rem;
+      }
+      .site-main-img>img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 22.625rem;
+        height: 15.625rem;
+      }
+      .site-main-state {
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        display: block;
+        width: 3.125rem;
+        height: 1.75rem;
+        font-size: .875rem;
+        text-align: center;
+        line-height: 1.625rem;
+        color: #FFFFFF;
+        background-color: #B51E24;
+        border-radius: 4px;
+      }
+      .site-main-rank {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 8.25rem;
+        height: 1.875rem;
+        line-height: 1.75rem;
+        font-size: .75em;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: rgba(0,0,0,0.48);
+      }
+      .site-main-hoverimg {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        opacity: 0;
+      }
+      .site-main-hoverimg:hover {
+        opacity: 1;
+      }
+      .site-main-hoverimg_wrap {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .site-main-hoverimg-btn { 
+        width: 3.75rem  ;
+        height: 3.75rem  ;
+        background-color: rgba(0,0,0,0.7);
+        margin: .625rem;
+      }
+      
+      .site-main-right {
+        padding-left: 1rem;
+      }
+      .site-main-headline {
+        margin-top: .625em;
+        padding: .125rem .5625rem;
+        width: 9.375rem;
+        height: 1.75rem;
+        border: 1px solid #42A2FC;
+        border-radius: 2px;
+      }
+      .site-main-headline span{
+        vertical-align: middle;
+        margin-right: .0625rem;
+      }
+      .site-main-headline p {
+        font-size: .875rem;  
+        letter-spacing: -0.04rem;
+        color: #42A2FC;
+      }
+      .site-main-title {
+        margin-top: .25rem;
+        font-size: 1.875rem;
+        font-weight: normal;
+        letter-spacing: -0.03rem;
+      }
+      .site-main-boundary {
+        display: block;
+        margin: 1.875rem 0 2.5rem;
+        width: 25.5rem;
+        height: .0625em;
+        background-color: #EBEBEB;
+      }
+      .site-contents-boundary {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid #EBEBEB;
+      }
+      .site-desc-list dl {
+        clear: both;
+        overflow: hidden;
+        margin:0;
+        margin-bottom: .625rem;
+        height: auto;
+        font-size: 1.0625rem;
+        letter-spacing: -0.03rem;
+      }
+      
+      .site-desc-list dt {  
+        float: left;
+        width: 5rem;
+        color: #8E8E8E;
+      }
+      
+      .site-desc-list dd {
+        float: left;
+      }
+      .site-desc-list_map {
+        font-size: 1.0625rem  ;
+        color: #E39E03;
+      }
+      /* site-info */
+      .site-info-title {
+        margin-bottom: 1.875rem;
+        font-size: 1.25rem;
+        font-weight: normal;
+      }
+      .site-info-desc {
+        margin-top: 1.875rem;
+      }
+      .site-info-list dd{
+        width: 18.125rem;
+      }
+      .site-info-list button {
+        float: right;
+        width: 5rem;
+        height: 1.625rem;
+        border: 1px solid #8B8B8B;
+        border-radius: 4px;
+      }
+      .site-info-list button p {
+        line-height: 1.3125rem;
+        font-size: .75rem;
+        color: #8B8B8B;
+      }
+      .site-info-list button span {
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+      .site-info-list button span img {
+        margin-bottom: .0625rem;
+      }
+      
+      /* site-consulting */
+      .site-consulting {
+        padding-top: 1.25rem;
+      }
+      .site-consulting-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .site-consulting-activity {
+        margin-top: .625rem;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      .site-consulting-activity span {  
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #DD0C11;
+      }
+      .site-consulting-profile {
+        display: block;
+        overflow: hidden;
+        height: auto;
+        margin-top: 2.5rem;
+      }
+      .site-consulting-profile li{
+        float: left;
+        margin-bottom: 1.625rem;
+        padding-right: 4.125rem;
+        line-height: 2.25rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .site-consulting-profile img {
+        float: left;
+        margin-right: .875rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+      }
+      .site-consulting-profile button {
+        float: right;
+        margin-top: .375rem;
+        width: 4.375rem  ;
+        height: 1.625rem;
+        line-height: 1.375rem;
+        font-size: 0.8125rem;
+        font-weight: normal;
+        color: #272727;  
+        border: 1px solid #C9C9C9;
+        border-radius: 4px;
+      }
+
+    .profile-banner {
+        border: 1px solid #D9D9D9;
+        display: inline-block;
+        padding: 0.6875rem 7.25rem;
+        padding-left: 2.125rem;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 2.5rem;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.5rem;
+            height: 100%;
+            background-color: $main-color;
+        }
+        .profile-wrap {
+            .profile-img {
+                width: 4.0625rem;
+                height: 4.0625rem;
+                border-radius: 50%;
+            }
+            .profile-txt {
+                & > p {
+                    font-size: 0.8125rem;
+                    &.red {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
 }

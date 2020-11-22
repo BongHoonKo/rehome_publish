@@ -9,4 +9,11 @@ html,body {
     letter-spacing: normal;
     line-height: 1.5;
     letter-spacing: -0.02em;
+
+    @include respond-to(max-width, 1254px) {
+        height: 100%;
+    }
+    @include respond-to(max-width, 720px) {
+        font-size: 12px;
+    }
 }

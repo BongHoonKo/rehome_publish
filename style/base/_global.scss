@@ -2,6 +2,9 @@
     &.grey {
         background-color: #f1f1f1;
     }
+    @include respond-to(max-width, 1254px) {
+        height: 100%;
+    }
 }
 .c-wrap {
     padding: 5.125rem 0;

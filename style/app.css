@@ -407,8 +407,26 @@ html, body {
   letter-spacing: -0.02em;
 }
 
+@media all and (max-width: 1254px) {
+  html, body {
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
 .wrap.grey {
   background-color: #f1f1f1;
+}
+
+@media all and (max-width: 1254px) {
+  .wrap {
+    height: 100%;
+  }
 }
 
 .c-wrap {
@@ -1586,12 +1604,18 @@ html, body {
 }
 
 .layout {
-  width: 1254px;
-  max-width: 1254px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media all and (min-width: 1254px) {
+  .layout {
+    width: 1254px;
+    max-width: 1254px;
+  }
 }
 
 .layout.p_none {
@@ -1701,6 +1725,12 @@ html, body {
   margin-top: 3.75rem;
 }
 
+@media all and (max-width: 1254px) {
+  .logo-hd {
+    display: none;
+  }
+}
+
 .logo-hd .logo > img {
   width: 4.5rem;
   height: auto;
@@ -1795,6 +1825,12 @@ html, body {
   background-color: #414141;
   padding-top: 2.5rem;
   padding-bottom: 4.375rem;
+}
+
+@media all and (max-width: 1254px) {
+  .footer {
+    display: none;
+  }
 }
 
 .footer .ft-list:not(:last-of-type) {
@@ -2357,6 +2393,40 @@ html, body {
   margin-bottom: 10.25rem;
 }
 
+@media all and (max-width: 1254px) {
+  .login-layout {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.login-layout .m-close-btn {
+  display: none;
+  width: 2.165rem;
+  height: 2.165rem;
+}
+
+.login-layout .m-close-btn > img {
+  width: 1.333rem;
+  height: auto;
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .m-close-btn {
+    display: block;
+    margin: 2.165rem 0 1.333rem 0;
+  }
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .login-layout .login-wrap .login-title {
   font-weight: 300;
   font-size: 1.625rem;
@@ -2367,6 +2437,15 @@ html, body {
 
 .login-layout .login-wrap .login-title > b {
   font-weight: bold;
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap .login-title {
+    text-align: left;
+    margin: 0;
+    font-size: 2.35rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .login-layout .login-wrap .tooltip {
@@ -2381,6 +2460,19 @@ html, body {
   color: #DD0011;
 }
 
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap .tooltip {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap .login-btn__list {
+    margin-top: auto;
+  }
+}
+
 .login-layout .login-wrap .login-btn__list > li {
   width: 32.1875rem;
   margin: 0 auto;
@@ -2388,6 +2480,12 @@ html, body {
 
 .login-layout .login-wrap .login-btn__list > li:not(:last-of-type) {
   margin-bottom: 1.25rem;
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap .login-btn__list > li {
+    width: 100%;
+  }
 }
 
 .login-layout .login-wrap .login-btn__list > li > a {
@@ -2400,6 +2498,19 @@ html, body {
   background-repeat: no-repeat;
   position: relative;
   color: white;
+}
+
+@media all and (max-width: 1254px) {
+  .login-layout .login-wrap .login-btn__list > li > a {
+    border-radius: 4px;
+    padding-left: 4.125rem;
+    height: 3.84rem;
+    background-position: 1.625rem center !important;
+    font-weight: normal;
+  }
+  .login-layout .login-wrap .login-btn__list > li > a::before {
+    left: 4.125rem !important;
+  }
 }
 
 .login-layout .login-wrap .login-btn__list > li > a::before {
